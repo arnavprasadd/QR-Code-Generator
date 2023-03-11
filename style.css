@@ -1,0 +1,76 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    height: 730px;
+    background: #fff;
+    padding: 20px 25px 0;
+}
+
+.wrapper .form {
+    margin: 20px 0 100px;
+}
+
+.form :where(input) {
+    width: 80%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form :where(button) {
+    width: 19%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+.form input {
+    font-size: 18px;
+    padding: 0 17px;
+    border: 1px solid #999;
+}
+
+.form input::placeholder {
+    color: #999;
+}
+
+.form button {
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 17px;
+    background: crimson;
+}
+
+.form button:hover {
+    background: black;
+}
+
+.qr-code {
+    opacity: 0;
+    display: flex;
+    padding: 33px 0;
+    align-items: center;
+    pointer-events: none;
+    justify-content: center;
+}
+
+.wrapper.active .qr-code {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.qr-code img {
+    width: 300px;
+}
